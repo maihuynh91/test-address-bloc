@@ -66,4 +66,8 @@ const inquirer = require('inquirer');
     this.main();
   }
 
+  getContactCount(){
+    return this.contacts.length;
+  }
+
  }
