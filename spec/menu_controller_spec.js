@@ -14,6 +14,17 @@ describe("MenuController", () => {
         this.menu.contacts.push("Bob");
         expect(this.menu.getContactCount()).toBe(1)
       });
-
+   
     });
+
+    describe("#remindMe()", () => {
+        beforeEach(() => {
+            this.menu = new MenuController();
+          });
+ 
+        it("should return expected string", () => {
+          expect(this.menu.remindMe()).toEqual("Learning is a life-long pursuit");
+        });
   });
+
+});
